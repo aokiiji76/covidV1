@@ -58,7 +58,7 @@ class DepartementController extends AbstractController
         ]);
 
         $chart->setOptions([/* ... */]);
-
+        //dd($callApiService->getDepartmentData($department));
         return $this->render('departement/index.html.twig', [
             'data' => $callApiService->getDepartmentData($department),
             'chart' => $chart,
