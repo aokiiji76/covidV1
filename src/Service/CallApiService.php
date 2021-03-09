@@ -38,10 +38,6 @@ class CallApiService
         return $this->getApi('AllDataByDate?date=' . $date);
     }
 
-
-
-
-
     //--------------//--------------//----------//
 
     public function getApi($var):array
@@ -53,4 +49,6 @@ class CallApiService
         return $response->toArray();
     }
     //----------------//-----------//-----------//
+
+
 }
